@@ -35,29 +35,27 @@
 .earth_svg {
     height: 200px;
     width: auto;
-    margin-left: 300px;
-    animation: 5s bounce infinite;
+    margin-left: 0px;
+    animation: 5s bounce ease infinite;
     position: relative;
 }
 
 @keyframes bounce {
-    0% {
-        bottom: 0px;
+
+    0%,
+    100% {
+        transform: translate(0, 0)
     }
 
     25% {
-        bottom: 100px;
+        transform: translate(200px, -50px)
     }
 
     50% {
-        bottom: 0px;
+        transform: translate(400px, 0)
     }
 
     75% {
-        bottom: 100px;
-    }
-
-    100% {
-        bottom: 0px;
+        transform: translate(200px, 50px)
     }
 }
