@@ -36,15 +36,17 @@
     height: 200px;
     width: auto;
     margin-left: 300px;
-    animation: 2s spin infinite;
+    animation: 2s bounce ease-out infinite;
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg)
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: scale(1);
     }
 
-    to {
-        transform: rotate(360deg);
+    50% {
+        transform: scale(1.2);
     }
 }
