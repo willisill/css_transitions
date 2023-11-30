@@ -36,14 +36,14 @@
     height: 200px;
     width: auto;
     margin-left: 0px;
-    animation: 5s bounce ease infinite;
+    margin-top: 0px;
+    animation: 2s bounce linear infinite;
     position: relative;
 }
 
 @keyframes bounce {
 
-    0%,
-    100% {
+    0% {
         transform: translate(0, 0)
     }
 
@@ -56,6 +56,10 @@
     }
 
     75% {
-        transform: translate(200px, 50px)
+        transform: translate(600px, 50px)
+    }
+
+    100% {
+        transform: translate(800px, 0)
     }
 }
